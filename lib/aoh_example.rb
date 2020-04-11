@@ -23,11 +23,10 @@ def aoh_lookup(aoh, row, key)
 end
 
 def aoh_update(aoh, row, key, new_value)
-  aoh_lookup=aoh[row][key] 
-  aoh_lookup= new_value
+  aoh_lookup = aoh[row][key] 
+  aoh_lookup = new_value
   aoh_lookup
-  result = aoh_update(local_copy_of_aoh, 1, :name, "Joelle van Dyne (PGOAT)")
-      expect(result[1][:name]).to eq("Joelle van Dyne (PGOAT)")
+  
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
 end
